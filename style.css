@@ -77,105 +77,14 @@ body {
 }
 
 /* Header Section */
+
 #logo {
   text-decoration: none;
   color: black;
 }
 
-@media screen and (max-width: 992px) {
-  #title-image {
-    width: 70%;
-    border: 5px black solid;
-    box-shadow: 10px 10px black;
-    margin-bottom: 4rem;
-  }
-
-  #title-image:hover {
-    margin-top: 5px;
-    border: 5px aquamarine solid;
-    box-shadow: 12px 12px aquamarine;
-  }
-
-  .title-heading-top {
-    margin: auto;
-  }
-
-  #image-title {
-    font-family: "Black Han Sans", sans-serif;
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 5px 5px aquamarine;
-    margin: 0;
-  }
-
-  #box-heading {
-    margin-top: 10%;
-    padding-top: 8px;
-  }
-
-  .wave {
-    position: absolute;
-    right: 100px;
-    top: 500px;
-    z-index: 2;
-  }
-
-  .circle {
-    position: absolute;
-    left: 70px;
-    top: 40px;
-    z-index: -1;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #title-image {
-    width: 70%;
-    border: 5px black solid;
-    box-shadow: 10px 10px black;
-    margin-bottom: 4rem;
-  }
-
-  #title-image:hover {
-    margin-top: 5px;
-    border: 5px aquamarine solid;
-    box-shadow: 12px 12px aquamarine;
-  }
-
-  .title-heading-top {
-    margin: auto;
-  }
-
-  #image-title {
-    font-family: "Black Han Sans", sans-serif;
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 5px 5px aquamarine;
-    margin: 0;
-  }
-
-  #box-heading {
-    margin-top: 10%;
-    padding-top: 8px;
-  }
-
-  .wave {
-    position: absolute;
-    right: 100px;
-    top: 500px;
-    z-index: 2;
-  }
-
-  .circle {
-    position: absolute;
-    left: 70px;
-    top: 40px;
-    z-index: -1;
-  }
-}
-
 #title-image {
-  width: 70%;
+  width: 65%;
   border: 5px black solid;
   box-shadow: 10px 10px black;
   margin-bottom: 4rem;
@@ -193,7 +102,7 @@ body {
 
 #image-title {
   font-family: "Black Han Sans", sans-serif;
-  font-size: 5rem;
+  font-size: 10rem;
   text-align: center;
   text-shadow: 5px 5px aquamarine;
   margin: 0;
@@ -207,15 +116,122 @@ body {
 .wave {
   position: absolute;
   right: 100px;
-  top: 500px;
+  top: 450px;
   z-index: 2;
 }
 
 .circle {
   position: absolute;
-  left: 70px;
-  top: 40px;
+  left: 100px;
+  top: 100px;
   z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  #title-image {
+    width: 100%;
+    border: 5px black solid;
+    box-shadow: 10px 10px black;
+    margin-bottom: 2rem;
+  }
+
+  #title-image:hover {
+    margin-top: 2px;
+    border: 5px aquamarine solid;
+    box-shadow: 12px 12px aquamarine;
+  }
+
+  .title-heading-top {
+    margin: auto;
+  }
+
+  #image-title {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    text-shadow: 5px 5px aquamarine;
+  }
+
+  #box-heading {
+    margin-top: 10%;
+    padding-top: 8px;
+  }
+
+  .wave {
+    visibility: hidden;
+  }
+
+  .circle {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: -1;
+
+  }
+
+  .navbar-toggler {
+    border: none;
+    width: 3rem;
+    padding: 0 1rem 0 0;
+    z-index: 1000;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #title-image {
+    width: 100%;
+    border: 5px black solid;
+    box-shadow: 10px 10px black;
+    margin-bottom: 4rem;
+  }
+
+  #title-image:hover {
+    margin-top: 5px;
+    border: 5px aquamarine solid;
+    box-shadow: 12px 12px aquamarine;
+  }
+
+  .title-heading-top {
+    margin: auto;
+  }
+
+  #image-title {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 5px 5px aquamarine;
+    margin: 0;
+  }
+
+  #box-heading {
+    margin-top: 10%;
+    padding-top: 8px;
+  }
+
+  .wave {
+    position: absolute;
+    right: 100px;
+    top: 500px;
+    z-index: 2;
+  }
+
+  .circle {
+    z-index: -1;
+  }
+
+  .navbar-toggler {
+    border: none;
+    width: 3rem;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+  }
+
+  .container-fluid {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 /* Gallery Section */
@@ -236,6 +252,48 @@ body {
   margin-top: 40px;
   border: 5px black solid;
   box-shadow: 0 10px aquamarine;
+}
+
+@media screen and (max-width: 992px) {
+  #gallery .container-fluid {
+    padding: 10%%;
+    text-align: left;
+  }
+
+  .section-content img {
+    width: 150px;
+    margin: 40px;
+    border: 5px black solid;
+    box-shadow: 5px 0 #7fffd4;
+  }
+
+  .section-content img:hover {
+    margin-top: 40px;
+    border: 5px black solid;
+    box-shadow: 0 10px aquamarine;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #gallery .container-fluid {
+    padding: 10%;
+    text-align: left;
+  }
+
+  .section-content img {
+    width: 150px;
+    margin: 40px;
+    border: 5px black solid;
+    box-shadow: 5px 0 #7fffd4;
+  }
+
+  .section-content img:hover {
+    margin-top: 40px;
+    border: 5px black solid;
+    box-shadow: 0 10px aquamarine;
+  }
+
 }
 
 
@@ -288,6 +346,111 @@ label {
   border: 5px black solid;
   box-shadow: 10px 10px black;
   margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+
+  #contact .container-fluid {
+    padding: 5% 20%;
+    text-align: center;
+  }
+
+  .section-title {
+    color: black;
+    text-align: center;
+  }
+
+  .sec-title {
+    border-bottom: 5px aquamarine solid;
+    margin-bottom: 4rem;
+  }
+
+  .section-content {
+    padding: 0 3rem;
+    line-height: 1.5;
+  }
+
+  textarea {
+    border-color: lightgray;
+    border-radius: 5px;
+  }
+
+  label {
+    margin: 1rem 0;
+  }
+
+  .info {
+    margin: auto;
+    padding: 0 10%;
+  }
+
+  .userInfo {
+    padding: 0 1rem;
+  }
+
+  .userContent {
+    padding: 0 0 1rem 0;
+  }
+
+  .box-contact {
+    width: 97%;
+    border: 5px black solid;
+    box-shadow: 10px 10px black;
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  #contact .container-fluid {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .section-title {
+    color: black;
+    text-align: center;
+  }
+
+  .sec-title {
+    border-bottom: 5px aquamarine solid;
+    margin-bottom: 4rem;
+  }
+
+  .section-content {
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  textarea {
+    border-color: lightgray;
+    border-radius: 5px;
+  }
+
+  label {
+    margin: 1.5rem 0;
+  }
+
+  .info {
+    margin: auto;
+    padding: 0 10%;
+  }
+
+  .userInfo {
+    padding: 0 1rem;
+  }
+
+  .userContent {
+    padding: 0 0 1rem 0;
+  }
+
+  .box-contact {
+    width: 97%;
+    border: 5px black solid;
+    box-shadow: 10px 10px black;
+    margin: auto;
+  }
 }
 
 /* Footer Section */
